@@ -1,0 +1,29 @@
+# Arquivos gerados
+cypress/videos/*
+cypress/screenshots/*
+cypress/results/*
+node_modules
+coverage
+dist
+build
+
+# Configurações locais
+cypress.env.json
+*.local
+
+# Arquivos de cache
+*.cache
+npm-cache
+
+# Logs
+*.log
+
+# IDs de sessão
+session*
+
+# Arquivos de configuração de IDE
+*.suo
+*.user
+*.njsproj
+*.sln
+.vscode

@@ -1,0 +1,7 @@
+Recursos de funções auxiliares (describe(), it();
+hooks;
+assertions;
+mecanismos de buscas como contains(), parent(), get(), find(), children(), siblings();
+além dos recursos de interação como o  .click() e .type().
+
+Execução de testes através do modo Cypress Test Runner e também do modo modo Headless

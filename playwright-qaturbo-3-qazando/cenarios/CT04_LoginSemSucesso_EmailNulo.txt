@@ -1,0 +1,18 @@
+Título: CT04_LoginSemSucesso_EmailNulo
+Descrição: Cenário negativo onde não ocorre sucesso no login devido ao email a não informado no campo correspondente.
+
+Pré-condições:
+-
+
+Passo a passo:
+1- Acessar o site: https://automationpratice.com.br/
+2- Clicar em Login
+3- Clicar no campo senha
+4- Digitar senha: 123456
+5- Clicar no botão 'Login'
+
+Resultado Esperado:
+Abaixo do campo com seletor '#user' correspondente ao campo de label 'E-mail*', deve-se uma caixa de texto o texto 'E-mail inválido.'
+
+Prioridade:
+Alta

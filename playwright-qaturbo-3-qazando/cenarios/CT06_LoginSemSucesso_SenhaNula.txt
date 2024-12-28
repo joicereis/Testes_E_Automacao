@@ -1,0 +1,20 @@
+Título: CT06_LoginSemSucesso_SenhaNula
+Descrição: Cenário negativo onde não ocorre sucesso no login devido a senha não informada no campo correspondente.
+
+Pré-condições:
+1- email válido e já cadastrado;
+2- senha válida e já cadastrado para o email digitado.
+
+Passo a passo:
+1- Acessar o site: https://automationpratice.com.br/
+2- Clicar em Login
+3- Clicar no campo email
+4- Digitar email: tst@gmail.com
+5- Clicar no botão 'Login'
+
+Resultado Esperado:
+Abaixo do campo com seletor '#password' correspondente ao campo de label 'Senha*', deve-se uma caixa de texto o texto 'Senha inválida.'
+
+Prioridade:
+Alta
+

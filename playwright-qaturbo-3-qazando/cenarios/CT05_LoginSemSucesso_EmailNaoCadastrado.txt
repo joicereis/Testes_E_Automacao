@@ -1,0 +1,20 @@
+Título: CT05_LoginSemSucesso_EmailNaoCadastrado
+Descrição: Cenário negativo onde não ocorre sucesso no login devido ao email não ser uma email válido já cadastrado.
+
+Pré-condições:
+1- deve-se utilizar um endereço de email não cadastrado na base de dados;
+
+Passo a passo:
+1- Acessar o site: https://automationpratice.com.br/
+2- Clicar em Login
+3- Clicar no campo email
+4- Digitar email: abc
+5- Clicar no campo senha
+6- Digitar senha: 123456
+7- Clicar no botão 'Login'
+
+Resultado Esperado:
+Abaixo do campo com seletor '#user' correspondente ao campo de label 'E-mail*', deve-se uma caixa de texto o texto 'E-mail inválido.'
+
+Prioridade:
+Alta

@@ -1,0 +1,24 @@
+# Node.js
+node_modules/
+npm-cache/
+.pnp.js
+
+# Editors
+.vscode/
+.idea/
+
+# Logs
+logs/
+*.log
+
+# Test results
+test-results/
+coverage/
+
+# Build outputs
+dist/
+build/
+
+# Other
+*.tmp
+*~

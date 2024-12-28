@@ -1,0 +1,26 @@
+Título: CT02_LoginComSucessoOutroEmail
+Descrição: Cenário positivo onde ocorre login com sucesso. Login com sucesso com outro email válido.
+
+Pré-condições:
+1- email válido e já cadastrado;
+2- senha válida e já cadastrado para o email digitado.
+
+Passo a passo:
+1- Acessar o site: https://automationpratice.com.br/
+2- Clicar em Login
+3- Clicar no campo email
+4- Digitar email: tst@gmail.com
+5- Clicar no campo senha
+6- Digitar senha: 123456
+7- Clicar no botão 'Login'
+
+Resultado Esperado:
+Apresentar a home da aplicação logada junto com a caixa de mensagem com as seguintes mensagens:
+"Login realizado",
+"Olá, tst@gmail.com"
+e o botão "OK".
+
+
+Prioridade:
+Alta
+

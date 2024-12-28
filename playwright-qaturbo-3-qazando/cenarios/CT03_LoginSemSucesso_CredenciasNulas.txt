@@ -1,0 +1,17 @@
+Título: CT03_LoginSemSucesso_CredenciasNulas
+Descrição: Cenário negativo onde não ocorre sucesso no login devido ao email e senha não informados nos campos correspondentes.
+
+Pré-condições:
+-
+
+Passo a passo:
+1- Acessar o site: https://automationpratice.com.br/
+2- Clicar em Login
+3- Clicar no botão 'Login'
+
+Resultado Esperado:
+Abaixo do campo com seletor '#user' correspondente ao campo de label 'E-mail*', deve-se uma caixa de texto o texto 'E-mail inválido.'
+
+Prioridade:
+Alta
+

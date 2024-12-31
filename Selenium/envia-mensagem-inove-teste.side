@@ -1,0 +1,327 @@
+{
+  "id": "ffbe5f9b-70f9-42ba-b7dd-eaa08de8e194",
+  "version": "2.0",
+  "name": "envia-mensagem-inove-teste",
+  "url": "https://livros.inoveteste.com.br",
+  "tests": [{
+    "id": "6008f4a6-c007-4474-9978-94f55b295349",
+    "name": "CT01-EnviaMensagemSucesso",
+    "commands": [{
+      "id": "d1ec7136-8e2a-49d7-8d43-1f3a6c930b4e",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2c7add2b-e5a4-465f-809b-a33df6517514",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "872x1001",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3c9e8f84-eea2-430f-9087-ea784fd2b790",
+      "comment": "",
+      "command": "pause",
+      "target": "//Pausa para carregar o site",
+      "targets": [],
+      "value": "50000"
+    }, {
+      "id": "9c777bf7-dc0f-4d90-a9bc-1af1a756ed7a",
+      "comment": "",
+      "command": "click",
+      "target": "css=#sidr-navigation-container > #nav-wrap > #primary_menu > #menu-item-80 span",
+      "targets": [
+        ["css=#sidr-navigation-container > #nav-wrap > #primary_menu > #menu-item-80 span", "css:finder"],
+        ["xpath=//li[@id='menu-item-80']/a/span", "xpath:idRelative"],
+        ["xpath=//li[4]/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Contato')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d8f7fd67-4551-4cf5-98c0-c8d42d1a9b37",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.wpb_column:nth-child(1) h1",
+      "targets": [
+        ["css=.wpb_column:nth-child(1) h1", "css:finder"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Envie uma mensagem')]", "xpath:innerText"]
+      ],
+      "value": "Envie uma mensagem"
+    }, {
+      "id": "5fedfe4e-1510-437e-8580-b767041d0de6",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "name=your-name",
+      "targets": [
+        ["name=your-name", "name"],
+        ["css=.your-name > .wpcf7-form-control", "css:finder"],
+        ["xpath=//input[@name='your-name']", "xpath:attributes"],
+        ["xpath=//div[@id='wpcf7-f372-p24-o1']/form/p/label/span/input", "xpath:idRelative"],
+        ["xpath=//span/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "036aa7cf-b226-492c-8617-5aa030756f39",
+      "comment": "",
+      "command": "type",
+      "target": "name=your-name",
+      "targets": [
+        ["name=your-name", "name"],
+        ["css=.your-name > .wpcf7-form-control", "css:finder"],
+        ["xpath=//input[@name='your-name']", "xpath:attributes"],
+        ["xpath=//div[@id='wpcf7-f372-p24-o1']/form/p/label/span/input", "xpath:idRelative"],
+        ["xpath=//span/input", "xpath:position"]
+      ],
+      "value": "Testes"
+    }, {
+      "id": "68aee9db-d60f-4850-b40c-3c5796896539",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "name=your-email",
+      "targets": [
+        ["name=your-email", "name"],
+        ["css=.wpcf7-email", "css:finder"],
+        ["xpath=//input[@name='your-email']", "xpath:attributes"],
+        ["xpath=//div[@id='wpcf7-f372-p24-o1']/form/p[2]/label/span/input", "xpath:idRelative"],
+        ["xpath=//p[2]/label/span/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "adcf0af2-5da0-457e-bfe5-0bf35cb512fe",
+      "comment": "",
+      "command": "type",
+      "target": "name=your-email",
+      "targets": [
+        ["name=your-email", "name"],
+        ["css=.wpcf7-email", "css:finder"],
+        ["xpath=//input[@name='your-email']", "xpath:attributes"],
+        ["xpath=//div[@id='wpcf7-f372-p24-o1']/form/p[2]/label/span/input", "xpath:idRelative"],
+        ["xpath=//p[2]/label/span/input", "xpath:position"]
+      ],
+      "value": "joice.jdosreis@gmail.com"
+    }, {
+      "id": "96234f04-3541-4ed7-a229-e3c71d3392e4",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "name=your-subject",
+      "targets": [
+        ["name=your-subject", "name"],
+        ["css=.your-subject > .wpcf7-form-control", "css:finder"],
+        ["xpath=//input[@name='your-subject']", "xpath:attributes"],
+        ["xpath=//div[@id='wpcf7-f372-p24-o1']/form/p[3]/label/span/input", "xpath:idRelative"],
+        ["xpath=//p[3]/label/span/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1ffc79fb-079b-463a-851d-4e768e95ac60",
+      "comment": "",
+      "command": "type",
+      "target": "name=your-subject",
+      "targets": [
+        ["name=your-subject", "name"],
+        ["css=.your-subject > .wpcf7-form-control", "css:finder"],
+        ["xpath=//input[@name='your-subject']", "xpath:attributes"],
+        ["xpath=//div[@id='wpcf7-f372-p24-o1']/form/p[3]/label/span/input", "xpath:idRelative"],
+        ["xpath=//p[3]/label/span/input", "xpath:position"]
+      ],
+      "value": "Curso Teste Automaçao"
+    }, {
+      "id": "fdb82ec1-b9f4-45cc-b948-0dad18eef4c0",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "name=your-message",
+      "targets": [
+        ["name=your-message", "name"],
+        ["css=.wpcf7-textarea", "css:finder"],
+        ["xpath=//textarea[@name='your-message']", "xpath:attributes"],
+        ["xpath=//div[@id='wpcf7-f372-p24-o1']/form/p[4]/label/span/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ab1744a5-1036-48f4-ba0b-54dae071fdb6",
+      "comment": "",
+      "command": "type",
+      "target": "name=your-message",
+      "targets": [
+        ["name=your-message", "name"],
+        ["css=.wpcf7-textarea", "css:finder"],
+        ["xpath=//textarea[@name='your-message']", "xpath:attributes"],
+        ["xpath=//div[@id='wpcf7-f372-p24-o1']/form/p[4]/label/span/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": "teste"
+    }, {
+      "id": "2792a7de-21e7-416a-941f-35bc6469eb5f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.wpcf7-submit",
+      "targets": [
+        ["css=.wpcf7-submit", "css:finder"],
+        ["xpath=//input[@value='Enviar']", "xpath:attributes"],
+        ["xpath=//div[@id='wpcf7-f372-p24-o1']/form/p[5]/input", "xpath:idRelative"],
+        ["xpath=//p[5]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b23f3f9f-ce3a-4c87-a440-152346104344",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.wpcf7-response-output",
+      "targets": [
+        ["css=.wpcf7-response-output", "css:finder"],
+        ["xpath=//div[@id='wpcf7-f372-p24-o1']/form/div[2]", "xpath:idRelative"],
+        ["xpath=//form/div[2]", "xpath:position"]
+      ],
+      "value": "Agradecemos a sua mensagem. Responderemos em breve."
+    }, {
+      "id": "337f26be-90e8-4247-90a0-523f775cc665",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "0eea20f1-600e-4bcb-b014-77f05ee409d8",
+    "name": "CT02-NaoEnviaMensagem_CamposNulos",
+    "commands": [{
+      "id": "9e59f06e-a2ab-4a8b-a8a4-9c9837733541",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d5b2ecb2-ccaa-4bdb-ad55-49da8d821ba4",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "872x1000",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "368033c8-6f68-459e-8b51-649de7db2c05",
+      "comment": "",
+      "command": "click",
+      "target": "css=#sidr-navigation-container > #nav-wrap > #primary_menu > #menu-item-80 span",
+      "targets": [
+        ["css=#sidr-navigation-container > #nav-wrap > #primary_menu > #menu-item-80 span", "css:finder"],
+        ["xpath=//li[@id='menu-item-80']/a/span", "xpath:idRelative"],
+        ["xpath=//li[4]/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Contato')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "0a6ea857-62b9-4e80-9a39-21f7cc91c7e5",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.wpb_column:nth-child(1) h1",
+      "targets": [
+        ["css=.wpb_column:nth-child(1) h1", "css:finder"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Envie uma mensagem')]", "xpath:innerText"]
+      ],
+      "value": "Envie uma mensagem"
+    }, {
+      "id": "80638e9f-4b9b-4115-a550-8f7402991dfd",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "name=your-name",
+      "targets": [
+        ["name=your-name", "name"],
+        ["css=.your-name > .wpcf7-form-control", "css:finder"],
+        ["xpath=//input[@name='your-name']", "xpath:attributes"],
+        ["xpath=//div[@id='wpcf7-f372-p24-o1']/form/p/label/span/input", "xpath:idRelative"],
+        ["xpath=//span/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f6e209e4-c6e1-4fe0-96ed-0c4a9c345463",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "name=your-email",
+      "targets": [
+        ["name=your-email", "name"],
+        ["css=.wpcf7-email", "css:finder"],
+        ["xpath=//input[@name='your-email']", "xpath:attributes"],
+        ["xpath=//div[@id='wpcf7-f372-p24-o1']/form/p[2]/label/span/input", "xpath:idRelative"],
+        ["xpath=//p[2]/label/span/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "79a0de3f-a72d-436e-bc7f-1fdcd43b5906",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "name=your-subject",
+      "targets": [
+        ["name=your-subject", "name"],
+        ["css=.your-subject > .wpcf7-form-control", "css:finder"],
+        ["xpath=//input[@name='your-subject']", "xpath:attributes"],
+        ["xpath=//div[@id='wpcf7-f372-p24-o1']/form/p[3]/label/span/input", "xpath:idRelative"],
+        ["xpath=//p[3]/label/span/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7feee8aa-a077-4d63-a235-c0464d34e50a",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "name=your-message",
+      "targets": [
+        ["name=your-message", "name"],
+        ["css=.wpcf7-textarea", "css:finder"],
+        ["xpath=//textarea[@name='your-message']", "xpath:attributes"],
+        ["xpath=//div[@id='wpcf7-f372-p24-o1']/form/p[4]/label/span/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a4af1cdb-5c66-4b7d-b4bb-9b02e4223fa7",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.wpcf7-submit",
+      "targets": [
+        ["css=.wpcf7-submit", "css:finder"],
+        ["xpath=//input[@value='Enviar']", "xpath:attributes"],
+        ["xpath=//div[@id='wpcf7-f372-p24-o1']/form/p[5]/input", "xpath:idRelative"],
+        ["xpath=//p[5]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8eda9dcc-39a8-4afc-9be6-ca3456a8fdec",
+      "comment": "",
+      "command": "click",
+      "target": "css=.wpcf7-submit",
+      "targets": [
+        ["css=.wpcf7-submit", "css:finder"],
+        ["xpath=//input[@value='Enviar']", "xpath:attributes"],
+        ["xpath=//div[@id='wpcf7-f372-p24-o1']/form/p[5]/input", "xpath:idRelative"],
+        ["xpath=//p[5]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0925e20b-772e-4ea6-aaa3-e7d234363c91",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.wpcf7-response-output",
+      "targets": [
+        ["css=.wpcf7-response-output", "css:finder"],
+        ["xpath=//div[@id='wpcf7-f372-p24-o1']/form/div[2]", "xpath:idRelative"],
+        ["xpath=//form/div[2]", "xpath:position"]
+      ],
+      "value": "Um ou mais campos possuem um erro. Verifique e tente novamente."
+    }]
+  }],
+  "suites": [{
+    "id": "5277b220-4c33-4311-bc8c-8168a5984a57",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["6008f4a6-c007-4474-9978-94f55b295349"]
+  }],
+  "urls": ["https://livros.inoveteste.com.br/"],
+  "plugins": []
+}

@@ -5,7 +5,7 @@
   "url": "https://livros.inoveteste.com.br",
   "tests": [{
     "id": "6008f4a6-c007-4474-9978-94f55b295349",
-    "name": "CT01-EnviaMensagemSucesso",
+    "name": "CT01-ValidaEnvioMensagem",
     "commands": [{
       "id": "d1ec7136-8e2a-49d7-8d43-1f3a6c930b4e",
       "comment": "",
@@ -187,7 +187,7 @@
     }]
   }, {
     "id": "0eea20f1-600e-4bcb-b014-77f05ee409d8",
-    "name": "CT02-NaoEnviaMensagem_CamposNulos",
+    "name": "CT02-ValidaCamposObrigatorios",
     "commands": [{
       "id": "9e59f06e-a2ab-4a8b-a8a4-9c9837733541",
       "comment": "",
@@ -302,6 +302,50 @@
       ],
       "value": ""
     }, {
+      "id": "c8424793-bf2e-46d1-b67b-fe537be89619",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.your-name > .wpcf7-not-valid-tip",
+      "targets": [
+        ["css=.your-name > .wpcf7-not-valid-tip", "css:finder"],
+        ["xpath=//div[@id='wpcf7-f372-p24-o1']/form/p/label/span/span", "xpath:idRelative"],
+        ["xpath=//span/span", "xpath:position"]
+      ],
+      "value": "O campo é obrigatório."
+    }, {
+      "id": "cfbb47cd-cf85-48b4-ad2a-6ec29bb8794e",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.your-email > .wpcf7-not-valid-tip",
+      "targets": [
+        ["css=.your-email > .wpcf7-not-valid-tip", "css:finder"],
+        ["xpath=//div[@id='wpcf7-f372-p24-o1']/form/p[2]/label/span/span", "xpath:idRelative"],
+        ["xpath=//p[2]/label/span/span", "xpath:position"]
+      ],
+      "value": "O campo é obrigatório."
+    }, {
+      "id": "f3c8c8e5-e18b-4109-9307-7cab0d018b32",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.your-subject > .wpcf7-not-valid-tip",
+      "targets": [
+        ["css=.your-subject > .wpcf7-not-valid-tip", "css:finder"],
+        ["xpath=//div[@id='wpcf7-f372-p24-o1']/form/p[3]/label/span/span", "xpath:idRelative"],
+        ["xpath=//p[3]/label/span/span", "xpath:position"]
+      ],
+      "value": "O campo é obrigatório."
+    }, {
+      "id": "22ecb021-8116-427f-9665-f5a0971f3a3e",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.your-message > .wpcf7-not-valid-tip",
+      "targets": [
+        ["css=.your-message > .wpcf7-not-valid-tip", "css:finder"],
+        ["xpath=//div[@id='wpcf7-f372-p24-o1']/form/p[4]/label/span/span", "xpath:idRelative"],
+        ["xpath=//p[4]/label/span/span", "xpath:position"]
+      ],
+      "value": "O campo é obrigatório."
+    }, {
       "id": "0925e20b-772e-4ea6-aaa3-e7d234363c91",
       "comment": "",
       "command": "assertText",
@@ -312,6 +356,13 @@
         ["xpath=//form/div[2]", "xpath:position"]
       ],
       "value": "Um ou mais campos possuem um erro. Verifique e tente novamente."
+    }, {
+      "id": "4b00b8a1-e94f-4354-9a00-27206c95f404",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
     }]
   }],
   "suites": [{

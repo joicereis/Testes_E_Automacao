@@ -1,0 +1,27 @@
+Principais Comandos do Selenium IDE:
+
+assert - Verifica a existência ou condição de um elemento, como por exemplo: se exibe o texto esperado (assertText), se o elemento é editável (assertEditable), se o elemento existe (assertElementPresent).
+
+check - Marca o checkbox
+
+click - Clica no elemento.
+
+close - Fecha o navegador.
+
+open - Acessa a URL.
+
+pause - Pausa durante a execução do script (em milissegundos).
+
+refresh - Atualiza a página.
+
+runScript - Executa um comando em javascript.
+
+select - Seleciona um item do combobox.
+
+sendKeys - Preenche o textbox (com máscara) com um valor.
+
+store - Armazena um valor (string, inteiro ou booleano) de um elemento, como por exemplo: "Texto1" (storeText), 123 (storeEval), true/false (storeVisible).
+
+type - Preenche o textbox (sem máscara) com um valor.
+
+wait - Pausa implícita durante a execução do script (por default até 30s) que vai de acordo com a condição de um elemento ou com o carregamento da página. Exemplo: exceução pausada até aparecer um determinado elemetno na tela (waitForVisible), execução pausada até terminar o carregamento da página após o clique no botão Enviar (clickAndWait).
